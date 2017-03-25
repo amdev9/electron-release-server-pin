@@ -36,11 +36,7 @@
     "sails": "^0.12.12",
     "sails-disk": "^0.10.10",
     "sails-pg-session": "^1.0.1",
-<<<<<<< HEAD
     "sails-postgresql": "^0.12.2",
-=======
-    "sails-postgresql": "^0.12.1",
->>>>>>> b8ca0c9ee801e5b99c043d3562f8e444515bff9d
     "semver": "^5.3.0",
     "skipper-disk": "^0.5.7",
     "strip-bom": "^3.0.0",
