@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b8ca0c9ee801e5b99c043d3562f8e444515bff9d
 ##
 # You should look at the following URL's in order to grasp a solid understanding
 # of Nginx configuration files in order to fully unleash the power of Nginx.
@@ -88,16 +91,26 @@ server {
 
 server {
     listen       80;
+<<<<<<< HEAD
     server_name  download.yourdomain.com;
 
     location / {
     
+=======
+    server_name  instafilter.mailglobals.co;
+
+    location / {
+>>>>>>> b8ca0c9ee801e5b99c043d3562f8e444515bff9d
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwared-For $proxy_add_x_forwarded_for;
         proxy_set_header Host $http_host;
         proxy_set_header X-NginX-Proxy true;
 
+<<<<<<< HEAD
         proxy_pass http://127.0.0.1:1337/;
+=======
+        proxy_pass http://127.0.0.1:5014/;
+>>>>>>> b8ca0c9ee801e5b99c043d3562f8e444515bff9d
         proxy_redirect off;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
@@ -110,6 +123,31 @@ server {
     }
 }
 
+<<<<<<< HEAD
 
 
+=======
+server {
+    listen       80;
+    server_name  pinmaker.mailglobals.co;
+
+    location / {
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwared-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-NginX-Proxy true;
+
+        proxy_pass http://127.0.0.1:5012/;
+        proxy_redirect off;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+>>>>>>> b8ca0c9ee801e5b99c043d3562f8e444515bff9d
 
