@@ -9,7 +9,7 @@ angular.module('app.home', [])
   .controller('HomeController', ['$scope', '$window', 'PubSub', 'DataService',
     function($scope, $window, PubSub, DataService) {
       $scope.softDetailShow = function() {
-        $window.open('/InstaFilterPROv1.pdf');
+        $window.open('/PinMakerPROv1.pdf');
       }
     }
   ]);
