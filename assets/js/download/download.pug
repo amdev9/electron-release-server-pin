@@ -2,16 +2,20 @@
   .col-6
     .col-md-4
     .col-md-4
-      h2 Скачать PinMaker PRO
+      h2 Генерация ключа
     .col-md-4
       h2
-        small.pull-right
-          | Channel: 
+        small.pull-right.version
+          | Версия: 
           select(
             ng-model='vm.channel'
             ng-options='channel for channel in vm.availableChannels'
             ng-change='vm.getLatestReleases()'
             )
+
+ 
+
+
 .row.text-center.padding-20-0
   p 
     | Ознакомьтесь с 
@@ -91,16 +95,17 @@
 .row.text-center.padding-top-20(ng-if="!vm.latestReleases")
   .col-md-12
     h5.text-muted
-      | There are no {{ vm.channel }} releases available for {{ vm.platform }}.
+      | Нет {{ vm.channel }} версий доступных для {{ vm.platform }}.
+      //- | There are no {{ vm.channel }} releases available for {{ vm.platform }}.
       
 .row.text-center.padding-20-0
   .col-sm-8.col-sm-offset-2
     h5.pointer(
       ng-click="vm.showAllVersions = !vm.showAllVersions"
       )
-      span(ng-show="vm.showAllVersions") Hide
-      span(ng-hide="vm.showAllVersions") Show
-      |  all versions
+      span(ng-show="vm.showAllVersions") Скрыть
+      span(ng-hide="vm.showAllVersions") Показать
+      |  все версии
     div(ng-show="vm.showAllVersions")
       .jumbotron(ng-repeat='version in vm.versions')
         p.timestamp.text-muted(am-time-ago="version.createdAt")

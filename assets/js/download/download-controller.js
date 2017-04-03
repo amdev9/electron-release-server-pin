@@ -77,3 +77,6 @@ angular.module('app.releases', [])
       });
     }
   ]);
+
+
+  

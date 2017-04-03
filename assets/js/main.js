@@ -2,7 +2,9 @@ angular.module('app', [
     'app.core',
     'app.admin',
     'app.home',
-    'app.releases'
+    'app.releases',
+    'app.features',
+    'app.contacts'
   ])
   .config(['$routeProvider', '$locationProvider', 'NotificationProvider',
     function($routeProvider, $locationProvider, NotificationProvider) {

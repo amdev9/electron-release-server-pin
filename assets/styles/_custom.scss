@@ -1,3 +1,95 @@
+h1, h2, p, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-default {
+  background-color: white;
+}
+
+.navbar-btn {
+  margin-top: 12px !important;
+}
+
+.h2, h2 {
+  font-size: 42px;
+  font-weight: 300;
+}
+
+.features h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 25px;
+}
+
+.main {
+  padding-bottom: 50px;
+}
+
+.butt a {
+  width: 170px;
+  display: block;
+}
+
+.for {
+  display: block;
+}
+
+
+.navbar-nav {
+    > li > a {
+      
+      font-weight: 400;
+      padding-top: 24px;
+      font-size: 18px;
+      line-height: 25px; 
+
+      &:hover,
+      &:focus {
+        color: #ccc;
+        // background-color: $navbar-default-link-hover-bg;
+      }
+    }
+    > .active > a {
+
+
+
+    }
+   
+  }
+
+ 
+.navbar-brand {
+  float: left;
+  padding: 19px 15px;
+  height: 70px;
+}
+
+
+.headof p {
+  text-align: left;
+  margin-bottom: 25px;  
+  line-height: 26px; 
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 25px;
+  
+}
+
+.payment {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.version {
+  font-size: 20px;
+}
+
+
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+
 .text-gray {
   color: $gray-light;
 }
@@ -80,7 +172,7 @@ textarea {
 // Navbar Logo
 .navbar-logo {
   padding: 10px 15px;
-  height: 60px;
+  height: 70px
 }
 
 .browsehappy {

@@ -1,23 +1,52 @@
 doctype html
 html
   head
+
+
     meta(charset='utf-8')
     title PinMaker PRO - программа для продвижения в Pinterest
+
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet")
+    
     meta(name='description', content='Download the interactive app for doing whatever it does.')
     meta(name='author', content='ASoft')
     meta(name='viewport', content='width=device-width, initial-scale=1')
+
     base(href="/")
 
     style(type='text/css').
-      h4 {
-        font-size: 20px !important;
-        font-weight: 300 !important;
-        margin-top: 25px !important;
+      
+
+
+      @media(min-width: 992px) {
+        iframe {
+          margin-top: 50px;
+        }
+        .headof p {
+          width: 400px;  
+        }
+        .headof h1 {
+          font-family: 'Open Sans', sans-serif;
+          text-align: left;
+          font-weight: 300;
+          font-size: 90px; 
+        }
+      }     
+
+      @media (max-width: 992px) {
+        .headof h1 {
+          font-family: 'Open Sans', sans-serif;
+          text-align: left;
+          font-weight: 300;
+          font-size: 70px; 
+        }
+
+        .headof p {
+          width: 100%;
+        }
       }
-      .payment {
-        font-size: 20px !important;
-        font-weight: 300 !important;
-      }
+
+      
     // bower:css
     link(rel='stylesheet', href='/bower_components/angular-ui-notification/dist/angular-ui-notification.css')
     link(rel='stylesheet', href='/bower_components/components-font-awesome/css/font-awesome.css')
@@ -31,31 +60,45 @@ html
       .navbar.navbar-default(role='navigation')
         .container-fluid
           .navbar-header
+            //- button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+             
+
             a.pull-left(href='/')
               img.navbar-logo(src='/images/logo.svg')
-            a.navbar-brand(href='/') PinMaker PRO
+            a.pull-left(href='/') 
+              img.navbar-brand(src='/images/brand.svg')
+
+      
+  
+
           .collapse.navbar-collapse
+            //- ul.nav.navbar-nav
+            //-   li(ng-class="{ active: isActive('/')}")
+            //-     a(href='/') Главная
             ul.nav.navbar-nav
-              li(ng-class="{ active: isActive('/')}")
-                a(href='/') Главная
+              li(ng-class="{ active: isActive('/features')}")
+                a(href='/features') 
+                  | Что умеет?
+
+            ul.nav.navbar-nav
+              li(ng-class="{ active: isActive('/contacts')}")
+                a(href='/contacts') 
+                  | Контакты
+
             ul.nav.navbar-nav
               li(ng-class="{ active: isActive('/releases')}")
                 a(href='/releases') 
-                  | Скачать для: 
-                  i.fa.fa-windows.fa-fw.fa-lg
-                  i.fa.fa-apple.fa-fw.fa-lg
+                  | Купить
+                  
             auth-toolbar
     .container
       div(ng-view='')
       .footer
         p
-          | PinMaker PRO 
+          | PinMaker PRO
           i.fa.fa-fw.fa-copyright
           | 2017
-      //-     i.fa.fa-fw.fa-code
-      //-     |  with
-      //-     i.fa.fa-fw.fa-heart
-      //-     |  by SocialDevTeam
+
 
     // bower:js
     script(src='/bower_components/angular/angular.js')
