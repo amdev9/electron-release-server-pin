@@ -94,12 +94,17 @@ html
     .container
       div(ng-view='')
       .footer
-        p
-          | PinMaker PRO
-          i.fa.fa-fw.fa-copyright
-          | 2017
-          a(href='/instafilter-license.txt' target='_blank') Лицензионное соглашение
-
+        .row
+          //- .col-md-4
+          //-   .pull-left
+          //-     p
+          //-       | PinMaker PRO
+          //-       i.fa.fa-fw.fa-copyright
+          //-       | 2017
+          //- .col-md-4
+          .text-center
+            a(href='/instafilter-license.txt' target='_blank') Лицензионное соглашение
+          //- .col-md-4
 
 
     // bower:js

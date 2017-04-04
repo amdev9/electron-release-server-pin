@@ -45,10 +45,11 @@ angular.module('app.core.data.service', [
        * @type {Array}
        */
       self.availableChannels = [
-        'stable',
-        'rc',
-        'beta',
-        'alpha'
+        'stable'
+        // ,
+        // 'rc',
+        // 'beta',
+        // 'alpha'
       ];
 
       /**
