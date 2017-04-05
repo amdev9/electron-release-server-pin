@@ -1,6 +1,5 @@
 
-
-div(class="main")
+.container
   .row.text-center.padding-20-0
     div(class="col-md-7 col-md-push-5") 
       div(class="embed-responsive embed-responsive-16by9")
@@ -18,39 +17,63 @@ div(class="main")
             i.fa.fa-apple.fa-fw.fa-lg
             i.fa.fa-windows.fa-fw.fa-lg
         div(class="butt")
-          a.btn.btn-warning.btn-lg(
-                  ng-click="softDetailShow()"
-                  )
+          a.btn.btn-warning.btn-lg(href="/features")
             | Подробнее
 
-div(class="features")
-  .row.text-center
-    .col-md-12
-      h2 PinMaker PRO это:
+section.howWorks
+  .container
+    .row.text-center
+      .col-md-12
+        h2 Как это работает?
+    .row.text-center
+      .col-md-4
+        i.fa.fa-4x.fa-download
+        h3 Сбор аудитории по огромному количеству критериев без авторизации
+      .col-md-4
+        i.fa.fa-4x.fa-user-plus
+        h3 Регистрация аккаунтов с полной эмуляцией нескольких видов мобильных устройств
+      .col-md-4
+        i.fa.fa-4x.fa-line-chart
+        h3 Высокая скорость работы и ведение более 1000+ аккаунтов с одного ПК одновременно
+      //- img(src="./images/CybSzRB5TV.gif" style="display:block;width:40%;"  class="img-fluid" alt="Responsive image")
+    .row.text-center
+      .payment
+        p Программа PinMaker PRO платная, ее стоимость – 3000 руб., оплата единоразовая, обновления бесплатные.
+          | Для активации программы, свяжитесь с нами по E-mail: 
+          b 
+            |  socialdevteam@yandex.ru
 
-  .row.text-center.padding-20-0
-    .col-md-4
-      i.fa.fa-4x.fa-search
-      h3 Сбор аудитории по огромному количеству критериев без авторизации
-    .col-md-4
-      i.fa.fa-4x.fa-user-plus
-      h3 Регистрация аккаунтов с полной эмуляцией нескольких видов мобильных устройств
-    .col-md-4
-      i.fa.fa-4x.fa-line-chart
-      h3 Высокая скорость работы и ведение более 1000+ аккаунтов с одного ПК одновременно
-    //- img(src="./images/CybSzRB5TV.gif" style="display:block;width:40%;"  class="img-fluid" alt="Responsive image")
+section.canDo
+  .container
+    .row.text-center.col-md-12
+        h2 PinMaker PRO умеет:
+    .row.text-center
+      .col-md-4
+        i.fa.fa-4x.fa-search
+        h3 Сбор аудитории по огромному количеству критериев без авторизации
+      .col-md-4
+        i.fa.fa-4x.fa-user-plus
+        h3 Регистрация аккаунтов с полной эмуляцией нескольких видов мобильных устройств
+      .col-md-4
+        i.fa.fa-4x.fa-line-chart
+        h3 Высокая скорость работы и ведение более 1000+ аккаунтов с одного ПК одновременно
+      //- img(src="./images/CybSzRB5TV.gif" style="display:block;width:40%;"  class="img-fluid" alt="Responsive image")
+    .more
+      .row.text-center
+        .col-md-12
+          a.btn.btn-warning.btn-lg(href="/features")
+            | Подробнее
+        //- a.btn.btn-warning.btn-lg(
+      //-         ng-click="softDetailShow()"
+      //-         )
+        //- | Подробнее
+   
 
-
-  .row.text-center.padding-20-0
-    .payment
-      p Программа PinMaker PRO платная, ее стоимость – 3000 руб., оплата единоразовая, обновления бесплатные.
-        | Для активации программы, свяжитесь с нами по E-mail: 
-        b 
-          |  socialdevteam@yandex.ru
-
-.row.text-center
-  .col-md-12
-    .jumbotron
-      p
-        a.btn.btn-success.btn-lg(href="/releases")
-          | Скачать сейчас
+section.download
+  .container
+    .row.text-center
+      .col-md-12
+        .jumbotron
+          p
+            a.btn.btn-success.btn-lg(href="/releases")
+              | Скачать сейчас
