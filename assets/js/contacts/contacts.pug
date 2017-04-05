@@ -5,16 +5,33 @@
         div(class="headof")
           div(class="for")
             h1 Контакты
-            p По всем возникающим вопросам писать в нашу базу знаний: toolihelp.com в "Приватный запрос" (слева вверху кнопка "ЗАДАТЬ ВОПРОС") или в "Общий". А также в Telegram.
-            p По вопросам перепривязки на другой компьютер, добавления аккаунтов после покупки, по всем вопросам, связанных с лицензией писать в нашу базу знаний: toolihelp.com
-
+            p По всем возникающим вопросам писать на почту: 
+              b
+                | socialdevteam@yandex.ru. 
+            //- А также в Telegram. Skype
+           
 
 section.download
   .container
-    .row.text-center
-      .col-md-12
-        .jumbotron
-          p
-            a.btn.btn-success.btn-lg(href="/releases")
-              | Скачать сейчас
+    .row.text-center.col-sm-6.col-sm-offset-3
+      .jumbotron
+        p Купить лицензию за 
+          span 2899 
+            i.fa.fa-rub 
+        p
+          a.btn.btn-success.btn-lg(href="/releases")
+            | Купить
 
+
+.container
+  .footer
+    .row
+      //- .col-md-4
+      //-   .pull-left
+      //-     p
+      //-       | PinMaker PRO
+      //-       i.fa.fa-fw.fa-copyright
+      //-       | 2017
+      //- .col-md-4
+      .text-center
+        a(href='/instafilter-license.txt' target='_blank') Лицензионное соглашение

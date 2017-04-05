@@ -1,3 +1,28 @@
+// .row {
+//     margin-left: 0px !important;
+//     margin-right:  0px !important;
+// }
+
+.download .btn {
+    margin-top: 45px; // 60px
+    // padding-top: 25px;
+    // border-top: 3px solid #fcfcfc; // black as background
+}
+
+.download .jumbotron p {
+    margin-bottom: 15px;
+    font-size: 41px;
+    font-weight: 200;
+}
+
+
+.download .jumbotron span {
+    margin-bottom: 15px;
+    font-size: 41px;
+    font-weight: 400;
+}
+
+
 .butt a {
   width: 170px;
   display: block;
@@ -15,21 +40,50 @@
 
 .howWorks i {
   margin: 60px -65px 0;
-  margin-bottom: 60px !important;
+  // margin-bottom: 60px !important;
 }
 
 .howWorks h3, p {
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
-  font-size: 19px;
 }
 
+.howWorks h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.howWorks p {
+  font-size: 14px;
+}
+
+.howWorks .foot-text1 p {
+  font-weight: 400;
+  margin-top: 45px;
+  font-size: 19px;
+}
 
 .canDo {
   font-family: 'Open Sans', sans-serif;
   padding: 60px 0 70px;
   
 }
+
+.canDo .col-md-4 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+
+// .canDo .col-md-4:nth-child(1), .canDo .col-md-4:nth-child(3) {
+//   border-top: 2px solid #F8D436;
+//   border-top-width: 2px;
+//   border-top-style: solid;
+//   border-top-color: white;
+// }
+
+
+
 
 .canDo i {
   margin: 60px -65px 0;
@@ -42,8 +96,10 @@
   font-size: 19px;
 }
 
-.more {
-  margin-top: 60px;
+.canDo .foot-text1 p {
+  font-weight: 400;
+  margin-top: 45px;
+  font-size: 19px;
 }
 
 
