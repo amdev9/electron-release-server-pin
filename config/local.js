@@ -32,13 +32,13 @@ module.exports = {
   // The full base url at which your site will be primarily available.
   // Include an http:// prefix
   // ex. 'http://my-site.com'
-  appUrl: 'http://instafilter.mailglobals.co',
+  appUrl: 'http://pinmaker.mailglobals.co',
 
   auth: {
     // Provide a set of credentials that can be used to access the admin interface.
     static: {
-      username: 'alexherokuname',
-      password: 'alexherokupass'
+      username: 'alexpinname1',
+      password: 'Name0123Space§`Of'
     },
     // You can also specify an ldap connection that can be used for authentication.
     //ldap: {
@@ -56,7 +56,7 @@ module.exports = {
   jwt: {
     // Recommended: 63 random alpha-numeric characters
     // Generate using: https://www.grc.com/passwords.htm
-    token_secret: 'EB9F0CA4414893F7B72DDF0F8507D88042DB4DBF8BD9D0A5279ADB54158EB2F0'
+    token_secret: 'PB9F0CA4414893F7B72DDF0F8507D88042DB4DBF8BD9D0A5279ADB54158EB2F0'
   },
 
   // connections: {
